@@ -1,0 +1,33 @@
+/* styles home */
+body{
+    background-image: url("../img/home.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #ffff;
+    overflow-y:hidden;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    align-content: space-around;
+}
+
+.btn{
+background: #008CBA;
+height: 39px;
+line-height: 42px;
+padding: 8px;
+font-size: 20px;
+width: 115px;
+text-align: center;
+margin-left: 26px;
+margin-right: 26px;
+text-decoration: none;
+color: #fff;
+border-radius: 10px;
+
+}

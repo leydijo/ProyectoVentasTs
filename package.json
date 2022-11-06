@@ -1,0 +1,20 @@
+{
+  "name": "proyectoventasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leydijo/ProyectoVentasTs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leydijo/ProyectoVentasTs/issues"
+  },
+  "homepage": "https://github.com/leydijo/ProyectoVentasTs#readme"
+}
