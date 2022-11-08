@@ -16,18 +16,44 @@ body{
     align-content: space-around;
 }
 
-.btn{
+.btnHome{
 background: #008CBA;
-height: 39px;
-line-height: 42px;
+/* height: 39px;
+line-height: 42px; */
 padding: 8px;
 font-size: 20px;
-width: 115px;
+/* width: 115px; */
 text-align: center;
 margin-left: 26px;
 margin-right: 26px;
-text-decoration: none;
-color: #fff;
+border: none;
 border-radius: 10px;
+color: #fff;
+}
+.btnHome a{
+    text-decoration: none;
+}
 
+/* styles modal */
+ .modal-body{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.button{
+    margin: 10px;
+} 
+
+.imgConsulta {
+    width: 50%;
+}
+
+.imgConsulta  img{
+    width: 100%;
+}
+
+.btns{
+    line-height: 100px;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas de Facturas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container">
+        <section>
+            <label for="search">Buscar por:</label>
+            <select name="search" id="search">
+                <option value="facturas">Facturas</option>
+                <option value="clientes">Clientes</option>
+                <option value="fechas">Fechas</option>
+            </select>
+        </section>
+        <section>
+            <label for="search">No. Facturas :</label>
+            <input type="text" name="searchFgit sac" id="searchFac">
+            <button>Buscar</button>
+        </section>
+        <table class="table table-bordered border-primary">
+            <thead>
+                <tr>
+                    <th scope="col"># Facturas</th>
+                    <th scope="col">Clientes</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Vendedor</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+</html>
