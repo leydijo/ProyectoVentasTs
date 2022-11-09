@@ -5,64 +5,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <title>Registro de ventas</title>
-</head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            
+            background-image: url(../public/img/guante.jpg);
+            background-position: center center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            box-sizing: border-box;
+            margin-top: 80px;
+        }
+        form {
+            margin: 0 auto;
+            width: 750px;
+            background-color: white;
+            top: 10px;
+            opacity: 0.8;
+            color: black;
+        }  
+        .botones1 {
+            color: blueviolet;
+            position: center;
+        }
 
+        .cajas {
+            border: solid 1px #ccc;
+        }
+    
+
+    </style>
+
+
+</head>
+<section class="form_ventas">
   <body>
-    <section class="form_ventas"></section>
-    <h1>Registro de ventas</h1>
-        <fieldset>
+    <h1><center>Registro de ventas</center></h1>
+    <form action="">
+    
+        <fieldset class="datos">
             <legend>Datos personales del cliente</legend>
             <p>
                 <label>Código de cliente</label>
-                <input type="text" name="codigo" size="20px"><br><br>
+                <input type="text" class="cajas" name="codigo" size="20px"><br><br>
                 <label>Nombre</label>
-                <input type="text" name="nombre" size="20px">
+                <input type="text" class="cajas" name="nombre" size="20px">
                 <label>Apellido</label>
-                <input type="text" name="apellido" size="20px">
+                <input type="text" class="cajas" name="apellido" size="20px">
                 <label>Cédula</label>
-                <input type="text" name="cedula" size="20px">
+                <input type="text" class="cajas" name="cedula" size="20px">
             </p>
         </fieldset>
         <fieldset>
             <legend>Facturas y ventas</legend>
             <p>
                 <label>N°</label>
-                <input type="text" name="num_factura" size="20px">
+                <input type="text" class="cajas" name="num_factura" size="20px">
                 <label>Fecha</label>
-                <input type="datetime" name="fecha" size="20px">
+                <input type="datetime" class="cajas" name="fecha" size="20px">
                 <label>Atendido por</label>
-                <input type="text" name="atendido_por" size="20px"><br><br>
+                <input type="text" class="cajas" name="atendido_por" size="20px"><br><br>
                 <label>Id-venta</label>
-                <input type="text" name="id_venta" size="20px">
+                <input type="text" class="cajas" name="id_venta" size="20px">
                 
                 <button type="button" class="elegir_producto">Elegir un producto?</button>
                 <button type="button" class="agregar_producto">Ageregar este producto</button><br><br>
                 
                 <label>Cod</label>
-                <input type="text" name="cod" size="20px">
+                <input type="text" class="cajas" name="cod" size="20px">
                 <label>Productos</label>
-                <input type="text" name="Productos" size="20px">
+                <input type="text" class="cajas" name="Productos" size="20px">
                 <label>Valor</label>
-                <input type="text" name="Valor" size="20px"><br><br>
+                <input type="text" class="cajas" name="Valor" size="20px"><br><br>
                 <label>N°</label>
-                <input type="text" name="N" size="20px">
+                <input type="text" class="cajas" name="N" size="20px">
                 <label>Cantidad</label>
-                <input type="text" name="Cantidad" size="20px">
+                <input type="text" class="cajas" name="Cantidad" size="20px">
                 <label>Importe</label>
-                <input type="text" name="Importe" size="20px">   
+                <input type="text" class="cajas" name="Importe" size="20px">   
             </p>
         </fieldset>
         <br>
+        <div class="final"><center>
         <button type="button" class="registrar_factura">Registrar Facturas</button>
                 <label>Total a pagar</label>
-                <input type="text" name="Total a pagar" size="20px">   
-        <button type="button" class="Eliminar">Eliminar</button>
+                <input type="text" class="cajas" name="Total a pagar" size="20px">   &nbsp;&nbsp;
+        <button type="button" class="Eliminar" >Eliminar</button>
         <br><br>
+    </div></center>
     </form>
 
-    </div>
 </body>
 </section>
 </html>

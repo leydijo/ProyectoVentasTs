@@ -60,13 +60,24 @@ color: #fff;
 
 /*Stilo ventas*/
 
+    /* .ventas {
+        background-image: url('fondo_ventas.jpg');
+    }
 
     .form_ventas {
-        background-color: rgb(185, 143, 227);
-        width: 50 px;
-        padding: 30 px;
-        margin: auto;
-        margin-top: 100 px;
-        border-radius: 4px;
 
+        background-color: black;
+        opacity: 0.5;
+        width: 2 px;
+        height: 100;
+        padding: 30 px; 
+        margin: 0 auto;
+        margin-top: 100 px;
+        border-radius: 8px; 
     }
+
+    .form {
+        margin: 0 auto;
+    } */
+
+
