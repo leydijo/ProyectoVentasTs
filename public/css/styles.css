@@ -58,3 +58,15 @@ color: #fff;
     line-height: 100px;
 }
 
+/*Stilo ventas*/
+
+
+    .form_ventas {
+        background-color: rgb(185, 143, 227);
+        width: 50 px;
+        padding: 30 px;
+        margin: auto;
+        margin-top: 100 px;
+        border-radius: 4px;
+
+    }
