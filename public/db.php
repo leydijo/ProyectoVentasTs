@@ -7,7 +7,7 @@ $pasworddb = "wdG03379w27CCV";
 $dbname = "epiz_32773669_FormVentas";
 
   //generando la conexion con el servidor
-  $conectar = mysqli_connect($hostname,$Usuariodb,$pasworddb,$dbname);
+  $conectar = mysqli_connect($hostname, $Usuariodb, $pasworddb, $dbname);
   return $conectar;
 
 }
