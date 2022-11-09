@@ -10,31 +10,31 @@
   
     <h1>Registro de ventas</h1>
     <div class="contenedor">
-    <form action="" method="post">
+    <form action="registro.php" method="post">
         <fieldset>
             <legend>Datos personales del cliente</legend>
             <p>
                 <label>Código de cliente</label>
-                <input type="text" name="codigo" size="20px"><br><br>
+                <input type="text" name="Id_cliente" size="20px" required><br><br>
                 <label>Nombre</label>
-                <input type="text" name="nombre" size="20px">
+                <input type="text" name="Nombre" size="20px" required>
                 <label>Apellido</label>
-                <input type="text" name="apellido" size="20px">
+                <input type="text" name="Apellido" size="20px" required>
                 <label>Cédula</label>
-                <input type="text" name="cedula" size="20px">
+                <input type="text" name="Identificacion" size="20px" required>
             </p>
         </fieldset>
         <fieldset>
             <legend>Facturas y ventas</legend>
             <p>
                 <label>N°</label>
-                <input type="text" name="num_factura" size="20px">
+                <input type="text" name="Num_factura" size="20px">
                 <label>Fecha</label>
-                <input type="datetime" name="fecha" size="20px">
+                <input type="datetime" name="Fecha_factura" size="20px" required>
                 <label>Atendido por</label>
-                <input type="text" name="atendido_por" size="20px"><br><br>
+                <input type="text" name="Nombre_vendedor" size="20px"><br><br>
                 <label>Id-venta</label>
-                <input type="text" name="id_venta" size="20px">
+                <input type="text" name="Id_ventas" size="20px">
                 
                 <button type="button" class="elegir_producto">Elegir un producto?</button>
                 <button type="button" class="agregar_producto">Ageregar este producto</button><br><br>
