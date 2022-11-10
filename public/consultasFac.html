@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultas de Facturas</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
 <body>
+ <div class="fondo">
     <section class="container">
         <section>
             <label for="search">Buscar por:</label>
@@ -35,14 +37,17 @@
                     <th scope="col">Total</th>
                 </tr>
             </thead>
-            <tbody class="table-group-divider">
-                <tr>
-                    <td></td>
-                </tr>
-
+            <tbody  id="data">
             </tbody>
         </table>
     </section>
+    <section>
+        <input type="button"  onclick="mostrarData();" id="show" value='Mostrar Todos'>
+        <button> Ver detalle Fact</button>
+    </section>
+
+ </div>
+   <script src="../dist/src/js/ventas.js"></script> 
 
 </body>
 

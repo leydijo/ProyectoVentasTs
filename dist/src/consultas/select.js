@@ -1,10 +1,9 @@
-import { Request, Response } from 'express'
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // DB
 //import { connect } from '../mysql/database'
 // Interfaces
 //import { Post } from '../interface/Post'
-
 // export async function getPosts(req: Request, res: Response): Promise<Response | void> {
 //     try {
 //         const conn = await connect();
@@ -15,3 +14,4 @@ import { Request, Response } from 'express'
 //         console.log(e)
 //     }
 // }
+//# sourceMappingURL=select.js.map
