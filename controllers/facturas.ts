@@ -19,7 +19,6 @@ export const getFacturaById = async( req: Request,res: Response) =>{
             msg: `No existe un usuario con el id ${id}`
         })
     }
-    // const factura = await Facturas.findByPk(id);
 
 }
 

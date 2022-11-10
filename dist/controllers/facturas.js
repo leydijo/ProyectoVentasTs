@@ -30,7 +30,6 @@ const getFacturaById = (req, res) => __awaiter(void 0, void 0, void 0, function*
             msg: `No existe un usuario con el id ${id}`
         });
     }
-    // const factura = await Facturas.findByPk(id);
 });
 exports.getFacturaById = getFacturaById;
 //# sourceMappingURL=facturas.js.map

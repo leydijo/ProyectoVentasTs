@@ -1,11 +1,10 @@
-const mostrarData = (data) => {
+const mostrarData= (data) => {
 
 let url = 'http://localhost:8000/api/facturas'; //1 orgin de dta
 let showData = document.getElementById(`data`);
 fetch(url)//2 solicitud a esa url
     .then(response => response.json()) // 3 se resuelve la promesa y la pasa a json
     .then(data => {
-        
             console.log(data)
             //document.getElementById('data').style.display = 'block';
             let body = '';
@@ -28,4 +27,18 @@ fetch(url)//2 solicitud a esa url
 
 }
     
+//logica de btn buscar
 
+// let summary;
+
+// fetch('http://localhost:8000/api/facturas')
+// .then(response => response.json())
+// .then(data => {
+//   summary = data;
+//   populateTable(data);
+// })
+// .catch(err => console.log(err))
+
+// const searchDataId(data) => {
+
+// }
