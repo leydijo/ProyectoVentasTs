@@ -10,7 +10,8 @@ class Server {
     private app: Application;
     private port: string;
     private apiPaths = {
-        facturas: '/api/facturas'
+        facturas: '/api/facturas',
+      
     }
 
     constructor() {

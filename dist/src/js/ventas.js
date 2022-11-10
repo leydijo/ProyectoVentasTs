@@ -8,13 +8,13 @@ fetch(url)//2 solicitud a esa url
             console.log(data)
             //document.getElementById('data').style.display = 'block';
             let body = '';
-            for(let i =  0; i< data.length; i++){
+            for(let i =  0; i< data.facturas.length; i++){
                 body += `<tr>
-                            <td>${data[i].id}</td>
-                            <td>${data[i].Id_cliente}</td>
-                            <td>${data[i].Fecha_factura}</td>
-                            <td>${data[i].Id_Vendedor}</td>
-                            <td>${data[i].Valor}</td>
+                            <td>${data.facturas[i].id}</td>
+                            <td>${data.facturas[i].Id_cliente}</td>
+                            <td>${data.facturas[i].Fecha_factura}</td>
+                            <td>${data.facturas[i].Id_Vendedor}</td>
+                            <td>${data.facturas[i].Valor}</td>
                         </tr> `
             
             
@@ -27,18 +27,53 @@ fetch(url)//2 solicitud a esa url
 
 }
     
-//logica de btn buscar
+const jsBuscar= () => {
 
-// let summary;
+    //obtenemos el valor insertado a buscar
+    buscar = $("#busqueda").prop("value")
+    
+    //utilizamos esta variable solo de ayuda y mostrar que se encontro
+    encontradoResultado = false;
 
-// fetch('http://localhost:8000/api/facturas')
-// .then(response => response.json())
-// .then(data => {
-//   summary = data;
-//   populateTable(data);
-// })
-// .catch(err => console.log(err))
+    //realizamos el recorrido solo por las celdas que contienen el código, que es la primera
+    $("#miTabla ").find('td:eq(0)').each(function () {
 
-// const searchDataId(data) => {
+        //obtenemos el codigo de la celda
+        codigo = $(this).html();
+        let body = '';
+        // console.log(codigo)
+        // console.log('codigo')
+        //comparamos para ver si el código es igual a la busqueda
+        if (codigo == buscar) {
+            console.log(codigo)
+            console.log(buscar)
+            //aqui ya que tenemos el td que contiene el codigo utilizaremos parent para obtener el tr.
+            trDelResultado = $(this).parent();
+            console.log(trDelResultado)
+            //ya que tenemos el tr seleccionado ahora podemos navegar a las otras celdas con find
+            nombre = trDelResultado.find("td:eq(1)").html();
+            edad = trDelResultado.find("td:eq(2)").html();
+            s = trDelResultado.find("td:eq(3)").html();
+            a = trDelResultado.find("td:eq(4)").html();
+            // console.log(nombre)
+            // console.log('nombre')
+            //mostramos el resultado en el div
+            $("#data").html( body += `<tr>
+            <td>${nombre}</td>
+            <td>${edad}</td>
+            <td>${s}</td>
+            <td>${a}</td>
+            <td>${a}</td>
+        </tr> `)
 
-// }
+            encontradoResultado = true;
+
+        }
+
+    })
+
+    //si no se encontro resultado mostramos que no existe.
+    if (!encontradoResultado)
+        $("#data").html("No existe el código: " + buscar)
+}
+

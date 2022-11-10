@@ -19,7 +19,7 @@ const database_1 = __importDefault(require("../src/mysql/database"));
 class Server {
     constructor() {
         this.apiPaths = {
-            facturas: '/api/facturas'
+            facturas: '/api/facturas',
         };
         this.app = (0, express_1.default)();
         this.port = process.env.PORT || '8000';

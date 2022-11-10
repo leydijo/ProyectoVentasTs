@@ -16,14 +16,15 @@ exports.getFacturaById = exports.getFacturas = void 0;
 const factura_1 = __importDefault(require("../models/factura"));
 const getFacturas = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const facturas = yield factura_1.default.findAll();
-    res.json(facturas);
+    res.json({ facturas });
 });
 exports.getFacturas = getFacturas;
 const getFacturaById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { id } = req.params;
-    const factura = yield factura_1.default.findByPk(id);
+    //const factura = await Facturas.findByPk(id);
+    const factura = yield factura_1.default.findAll();
     if (factura) {
-        res.json(factura);
+        res.json({ factura });
     }
     else {
         res.status(404).json({

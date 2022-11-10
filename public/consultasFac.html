@@ -24,10 +24,10 @@
         </section>
         <section>
             <label for="search">No. Facturas :</label>
-            <input type="text" name="searchFgit sac" id="searchFac">
-            <button id="searchBtn">Buscar</button>
+            <input type="text" name="searchFgit sac" id="busqueda">
+            <input onclick="jsBuscar();" type="button" value="Buscar" />
         </section>
-        <table class="table table-bordered border-primary">
+        <table class="table table-bordered border-primary" id="miTabla">
             <thead>
                 <tr>
                     <th scope="col"># Facturas</th>
@@ -49,7 +49,7 @@
 
  </div>
    <script src="../dist/src/js/ventas.js"></script> 
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>
