@@ -1,6 +1,8 @@
+const { response } = require("express");
+
 const mostrarData= (data) => {
 
-let url = 'http://localhost:8000/api/facturas'; //1 orgin de dta
+let url = 'http://localhost:8000/api/hospital'; //1 orgin de dta
 let showData = document.getElementById(`data`);
 fetch(url)//2 solicitud a esa url
     .then(response => response.json()) // 3 se resuelve la promesa y la pasa a json
@@ -79,3 +81,28 @@ const jsBuscar= () => {
         $("#data").html("No existe el código: " + buscar)
 }
 
+// save formulario
+//const sendData= (data) => {
+let nombre = document.getElementById('formulario');
+nombre.addEventListener('submit',function(e){
+    e.preventDefault();
+    console.log('click');
+    
+})
+
+// fetch('http://localhost:8000/api/hospital',{
+//     method : 'POST',
+//     headers:{
+//       'Content-Type'  :'application/json',
+      
+//     },
+//     body: JSON.stringify({
+//         nombre :  nombre
+//     })
+   
+// })
+// .then((data) =>{
+
+// })
+// .catch(error => console.log(error))
+// }
