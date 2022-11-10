@@ -51,19 +51,21 @@ const jsBuscar= () => {
             trDelResultado = $(this).parent();
             console.log(trDelResultado)
             //ya que tenemos el tr seleccionado ahora podemos navegar a las otras celdas con find
-            nombre = trDelResultado.find("td:eq(1)").html();
-            edad = trDelResultado.find("td:eq(2)").html();
-            s = trDelResultado.find("td:eq(3)").html();
-            a = trDelResultado.find("td:eq(4)").html();
-            // console.log(nombre)
+            id = trDelResultado.find("td:eq(0)").html();
+            console.log(trDelResultado)
+            client = trDelResultado.find("td:eq(1)").html();
+            date = trDelResultado.find("td:eq(2)").html();
+            vendendor = trDelResultado.find("td:eq(3)").html();
+            total = trDelResultado.find("td:eq(4)").html();
+           
             // console.log('nombre')
             //mostramos el resultado en el div
             $("#data").html( body += `<tr>
-            <td>${nombre}</td>
-            <td>${edad}</td>
-            <td>${s}</td>
-            <td>${a}</td>
-            <td>${a}</td>
+            <td>${id}</td>
+            <td>${client}</td>
+            <td>${date}</td>
+            <td>${vendendor}</td>
+            <td>${total}</td>
         </tr> `)
 
             encontradoResultado = true;

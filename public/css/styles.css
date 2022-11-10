@@ -31,7 +31,8 @@ border-radius: 10px;
 color: #fff;
 }
 .btnHome a{
-    text-decoration: none;
+    text-decoration: none !important;
+    color: #fff;
 }
 
 /* styles modal */
@@ -63,7 +64,22 @@ color: #fff;
 } */
 
 .fondo{
-    background-color: #fff;
+    background-color: #8d8d8de0;
     height: 100vh;
     width: 100%;
+}
+
+.factura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.box{
+    width: 90%;
+    border-style: inset solid;
+    padding: 20px;
+    border-width: 4px;
 }

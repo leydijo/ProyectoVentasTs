@@ -12,42 +12,47 @@
 </head>
 
 <body>
- <div class="fondo">
-    <section class="container">
-        <section>
+ <section class="fondo">
+    <section class="factura">
+
+      <section class="box">
+        <section >
             <label for="search">Buscar por:</label>
             <select name="search" id="search">
                 <option value="facturas">Facturas</option>
                 <option value="clientes">Clientes</option>
-                <option value="fechas">Fechas</option>
+            
             </select>
-        </section>
-        <section>
             <label for="search">No. Facturas :</label>
             <input type="text" name="searchFgit sac" id="busqueda">
             <input onclick="jsBuscar();" type="button" value="Buscar" />
         </section>
-        <table class="table table-bordered border-primary" id="miTabla">
-            <thead>
-                <tr>
-                    <th scope="col"># Facturas</th>
-                    <th scope="col">Clientes</th>
-                    <th scope="col">Fecha</th>
-                    <th scope="col">Vendedor</th>
-                    <th scope="col">Total</th>
-                </tr>
-            </thead>
-            <tbody  id="data">
-            </tbody>
-        </table>
-    </section>
-    <section>
-
+        <section>
+            <table class="table table-bordered border-primary" id="miTabla">
+                <thead>
+                    <tr>
+                        <th scope="col"># Facturas</th>
+                        <th scope="col">Clientes</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Vendedor</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody  id="data">
+                </tbody>
+            </table>
+       
         <input type="button"  onclick="mostrarData();" id="show" value='Mostrar Todos'>
         <button> Ver detalle Fact</button>
+        </section>
+      </section>
+        
+          
+        
+            
     </section>
 
- </div>
+</section>
    <script src="../dist/src/js/ventas.js"></script> 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
